@@ -1,0 +1,94 @@
+.header {
+    margin: 3vh auto;
+    width: 70%;
+    border-radius: 5px;
+    font: small;
+    color: rgb(31, 31, 31);
+}
+
+.header {
+  background: #ffffff;
+  padding: 1vh 0.5vw 1vh 1.5vw ;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navbar ul {
+  display: flex;
+  align-items: center;
+  gap: 2vw;
+}
+
+.navbar a {
+  transition: color 0.3s;
+}
+
+.navbar a:hover {
+  color: #e63946;
+}
+
+.center {
+    align-items: center;
+    gap: 2vw;
+    font-size: medium;
+    margin-right: 1vw;
+}
+
+.logo {
+    font-size:large;
+    font-weight: bold;
+}
+.red{
+    color: rgb(148, 35, 27);
+}
+
+.loginButton {
+  background: transparent;
+  border: 2px solid #33333337;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s, color 0.3s;
+}
+
+.loginButton:hover {
+  border-color: rgb(227, 92, 65);
+}
+
+.tryButton {
+  background: rgb(227, 92, 65);
+  color: #ffffff;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.tryButton:hover {
+  background: #d62828;
+}
+.navButton {
+    padding: 1vh;
+    border-radius: 5px;
+}
+.navButton:hover {
+    background-color: rgba(255, 165, 147, 0.462);
+    font-weight: bold;
+}
+
+.orangeButton {
+  background: rgba(227, 92, 65, 0.292);
+  align-self: center;
+  color: #d62828;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+  width: 15vw;
+}
+
+.orangeButton:hover {
+  background: #d628286e;
+}

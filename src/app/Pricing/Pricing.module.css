@@ -1,0 +1,26 @@
+.planTable td {
+  padding: 2vh;
+}
+.planTable hr {
+  margin-top: 2vh;
+}
+.planTable th {
+  padding: 2vh;
+}
+.orange {
+  color: rgb(227, 92, 65);
+}
+
+.orangeButton {
+  background: rgba(227, 92, 65, 0.241);
+  color: rgb(227, 92, 65);
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.orangeButton:hover {
+  background: rgba(214, 40, 40, 0.424);
+}

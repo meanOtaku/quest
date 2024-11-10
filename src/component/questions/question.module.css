@@ -1,0 +1,13 @@
+.orangeButton {
+    background: rgb(227, 92, 65);
+    color: #ffffff;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .orangeButton:hover {
+    background: #d62828;
+  }

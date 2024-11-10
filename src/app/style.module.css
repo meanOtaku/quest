@@ -1,0 +1,103 @@
+.orangeButton {
+  background: rgb(227, 92, 65);
+  color: #ffffff;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.orangeButton:hover {
+  background: #d62828;
+}
+.aiSearch {
+  width: 50%;
+  margin: 3vh auto;
+  border-radius: 5px;
+  /* border-color: black; */
+  border-width: 1px;
+  gap: 2px;
+}
+.aiInput {
+  width: 80%;
+  border: grey 2px !important;
+}
+.aiButton {
+  text-align: right;
+  margin: 1vh;
+  border-color: black;
+}
+
+.heading {
+  font-size: xxx-large;
+  font-weight: bold;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.fakeButton {
+  border: 1px rgba(128, 128, 128, 0.264) solid;
+  padding: 1vh 1vw;
+  border-radius: 5px;
+  background-color: white;
+}
+
+.boxBorder {
+  border: 1px black solid;
+  padding: 1vh 1vw;
+  border-radius: 10px;
+}
+.red{
+  color: rgb(148, 35, 27);
+}
+
+.boxPricing {
+  border: 2px rgba(128, 128, 128, 0.134) solid;
+  padding: 2rem;
+  text-align: left;
+  border-radius: 5px;
+  gap: 2vw;
+}
+
+.colorPricingName{
+  color: rgb(227, 92, 65);
+}
+
+.icon {
+  color: rgb(227, 92, 65);
+  box-shadow: 5px 5px 5px #a9a6a694;
+  border: 1px black solid;
+  border-radius: 100%;
+  padding: 20%;
+}
+.iconIn {
+  background-color: rgba(227, 92, 65, 0.263);
+  padding: 5%;
+  border-radius: 100%;
+}
+/* .floatingButton {
+  position: fixed;
+  top: 50rem;
+  left: 30rem;
+} */
+
+.floatingButton {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(45deg, #ff5f5f, #ff9d9d);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.floatingButton svg {
+  width: 32px;
+  height: 32px;
+  fill: white;
+}
