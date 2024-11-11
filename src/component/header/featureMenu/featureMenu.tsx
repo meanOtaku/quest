@@ -17,7 +17,7 @@ export default function DropdownMenuComp() {
           <div className="m-4">
             <DropdownMenuLabel className="text-lg">Discover</DropdownMenuLabel>
             <DropdownMenuSeparator />
-            <div className="space-y-3">
+            <div className="space-y-3 font-thin">
             <DropdownMenuItem>Custom Branded website</DropdownMenuItem>
             <DropdownMenuItem>User Mobile App</DropdownMenuItem>
             <DropdownMenuItem>Business Webpage</DropdownMenuItem>
@@ -34,7 +34,7 @@ export default function DropdownMenuComp() {
           <div className="m-4">
             <DropdownMenuLabel className="text-lg">Manage</DropdownMenuLabel>
             <DropdownMenuSeparator />
-            <div className="flex flex-row">
+            <div className="flex flex-row font-thin">
               <div className="space-y-3">
                 <DropdownMenuItem>Courses</DropdownMenuItem>
                 <DropdownMenuItem>Classess</DropdownMenuItem>
@@ -65,7 +65,7 @@ export default function DropdownMenuComp() {
           <div className="m-4">
             <DropdownMenuLabel className="text-lg">Grow</DropdownMenuLabel>
             <DropdownMenuSeparator />
-            <div className="space-y-3">
+            <div className="space-y-3 font-thin">
             <DropdownMenuItem>AI Marketing Tools</DropdownMenuItem>
             <DropdownMenuItem>Social Media Integration</DropdownMenuItem>
             <DropdownMenuItem>CRM</DropdownMenuItem>
@@ -74,7 +74,7 @@ export default function DropdownMenuComp() {
           </div>
         </div>
         <div style={{alignSelf: 'center'}} className="m-6">
-            <button className={`place-self-center ${headerCss.orangeButton}`}>See all feature ▶︎</button>
+            <button className={`place-self-center font-light ${headerCss.orangeButton}`}>See all feature ▶︎</button>
         </div>
       </DropdownMenuContent>
     </DropdownMenu>

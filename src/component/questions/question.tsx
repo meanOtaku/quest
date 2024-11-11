@@ -9,6 +9,7 @@ import { Input } from "@/components/ui/input";
 import { VscSearch } from "react-icons/vsc";
 
 import question from './question.module.css'
+import Link from "next/link";
 
 export default function Questions() {
   const defaultContent =
@@ -71,6 +72,9 @@ export default function Questions() {
             <AccordionContent>{defaultContent}</AccordionContent>
           </AccordionItem>
         </Accordion>
+      </div>
+      <div>
+      Haven’t got your answer? <Link href="/Support" style={{color: 'blue'}}>Contact our support now</Link>
       </div>
     </div>
   );

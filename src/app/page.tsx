@@ -372,7 +372,7 @@ export default function Landing() {
           </div>
         </div>
         <div>
-          <Link href={""} className={landing.link}>Explore In-Depth Difference</Link>
+          <Link href={"/Pricing"} className={landing.link}>Explore In-Depth Difference</Link>
         </div>
         <div>
           <div className="text-6xl mb-3 font-medium">Manage Your Business On the Go</div>

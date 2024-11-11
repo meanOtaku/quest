@@ -59,7 +59,7 @@
 .boxBorder {
   border: 1px rgba(0, 0, 0, 0.136) solid;
   border-radius: 10px;
-  background-color: rgba(168, 167, 167, 0.174);
+  background-color: rgb(242, 242, 242);
 }
 .red{
   color: rgb(148, 35, 27);

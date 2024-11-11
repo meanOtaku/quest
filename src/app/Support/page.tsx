@@ -7,7 +7,7 @@ import { Textarea } from "@/components/ui/textarea";
 
 export default function Contact() {
   return (
-    <div className="landing-page flex flex-col items-center text-center space-y-20">
+    <div className={`landing-page flex flex-col items-center text-center space-y-20 ${support.customInput}`}>
       <div className="flex w-full max-w-sm items-center space-x-2">
         <Button variant="outline" type="submit" style={{ textAlign: "right" }}>
           AI
@@ -21,42 +21,42 @@ export default function Contact() {
           placeholder="Ask Q! e.g Tell me about key Features."
         />
       </div>
-      <div className="text-6xl" style={{ textAlign: "left", width: "70%" }}>
+      <div className="text-6xl" style={{ textAlign: "left", width: "80%" }}>
         Get in touch with us.
         <br />
         We&apos;re here to assist you.
       </div>
-      <form action="" className="flex flex-col space-y-5" style={{ width: "70%" }}>
+      <form action="" className="flex flex-col space-y-5" style={{ width: "80%" }}>
         <div className="flex w-full flex-wrap md:flex-nowrap gap-4 text-left">
           <div className="grid w-full items-center gap-1.5">
-            <Label htmlFor="email">Business Name*</Label>
+            <Label htmlFor="text">Business Name*</Label>
             <Input
-              type="email"
-              id="email"
+              type="text"
+              id="text"
               placeholder="Search for your business listing 🔎"
             />
           </div>
           <div className="grid w-full items-center gap-1.5">
-            <Label htmlFor="email">Your Name*</Label>
-            <Input type="email" id="email" placeholder="Enter your name" />
+            <Label htmlFor="text">Your Name*</Label>
+            <Input type="text" id="text" placeholder="Enter your name" />
           </div>
         </div>
         <div className="flex w-full flex-wrap md:flex-nowrap gap-4 text-left">
           <div className="grid w-full items-center gap-1.5">
-            <Label htmlFor="email">Business Name*</Label>
+            <Label htmlFor="number">Phone number*</Label>
             <Input
-              type="email"
-              id="email"
-              placeholder="Search for your business listing 🔎"
+              type="phone"
+              id="phone"
+              placeholder="Enter phone number"
             />
           </div>
           <div className="grid w-full items-center gap-1.5">
-            <Label htmlFor="email">Your Name*</Label>
-            <Input type="email" id="email" placeholder="Enter your name" />
+            <Label htmlFor="email">Email Address*</Label>
+            <Input type="email" id="email" placeholder="e.g: xyz@gmail.com" />
           </div>
         </div>
         <div className="grid w-full gap-1.5">
-          <Label htmlFor="message">Your message</Label>
+          <Label className="text-left" htmlFor="message">Your message</Label>
           <Textarea placeholder="Type your message here." id="message" />
         </div>
         <button className={`place-self-start ${support.submitButton}`}>Leave us a Message →</button>

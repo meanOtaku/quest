@@ -23,19 +23,19 @@ export default function Pricing() {
           style={{ width: "60%" }}
         >
           <table className={pricing.planTable}>
-            <thead className="text-lg">
+            <thead className="text-lg font-normal">
               <tr>
                 <th>Features</th>
                 <th>
                   Starter <br />{" "}
-                  <div className="text-xs text-slate-400">
+                  <div className="text-xs text-slate-800 font-thin">
                     $17/month, billed <br />
                     monthly
                   </div>
                 </th>
                 <th>
                   Premium <br />
-                  <div className="text-xs text-slate-400">
+                  <div className="text-xs text-slate-800 font-thin">
                     $88/month, billed <br />
                     monthly
                   </div>

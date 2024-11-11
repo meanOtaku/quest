@@ -1,5 +1,6 @@
 .removeBorder{
     border-style: none !important;
+    background-color: rgba(255, 255, 255, 0);
 }
 .link {
     color: blue;
