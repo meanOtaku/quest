@@ -11,6 +11,20 @@
 .orangeButton:hover {
   background: #d62828;
 }
+
+.orangeButtonLight {
+  background: rgba(227, 92, 65, 0.172);
+  color: rgb(227, 92, 65);
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.orangeButtonLight:hover {
+  background: #d628285c;
+}
 .aiSearch {
   width: 50%;
   margin: 3vh auto;
@@ -43,9 +57,9 @@
 }
 
 .boxBorder {
-  border: 1px black solid;
-  padding: 1vh 1vw;
+  border: 1px rgba(0, 0, 0, 0.136) solid;
   border-radius: 10px;
+  background-color: rgba(168, 167, 167, 0.174);
 }
 .red{
   color: rgb(148, 35, 27);
@@ -72,7 +86,7 @@
 }
 .iconIn {
   background-color: rgba(227, 92, 65, 0.263);
-  padding: 5%;
+  padding: 1vw;
   border-radius: 100%;
 }
 /* .floatingButton {
@@ -100,4 +114,18 @@
   width: 32px;
   height: 32px;
   fill: white;
+}
+
+.image {
+  overflow: hidden;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.boxText{
+  padding: 1vh 1vw;
+  align-content: center;
+}
+.link {
+  color: blue;
+  align-items: center;
 }

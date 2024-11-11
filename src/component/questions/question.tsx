@@ -16,7 +16,7 @@ export default function Questions() {
   return (
     <div className="flex flex-col items-center text-center space-y-20 mt-20">
       <div>
-        <div className="text-6xl">Frequently Asked Questions</div>
+        <div className="text-6xl font-medium">Frequently Asked Questions</div>
         <br />
         Find answers to common questions about our services and features. <br />
         For more details, contact our support team.

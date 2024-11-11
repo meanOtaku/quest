@@ -1,70 +1,139 @@
-"use client"
-import { useState } from "react";
-import Carousel from "react-multi-carousel";
-import "react-multi-carousel/lib/styles.css";
+import * as React from "react";
+import health from "./../../../public/image1.png";
+import kids from "./../../../public/image2.png";
+import jorden from "./../../../public/image3.jpg";
 
-const images = [
-  "../../../public/image1.png",
-  "../../../public/image2.png",
-  "../../../public/image3.jpg",
-  // ... more images
-];
-export default function ImageCarousel() {
-  const [imageArray, updateImageArray] = useState(images);
+import { Card, CardContent } from "@/components/ui/card";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
+import Image from "next/image";
 
-  const handleNext = () => {
-    const lastImage = imageArray[2];
-    imageArray.pop();
-    imageArray.unshift(lastImage);
-    updateImageArray(imageArray);
-  };
+import carousel from "./carousel.module.css";
 
-  const handlePrev = () => {
-    const lastImage = imageArray[0];
-    imageArray.shift();
-    imageArray.push(lastImage);
-    updateImageArray(imageArray);
-  };
-
-
-const responsive = {
-desktop: {
-  breakpoint: { max: 3000, min: 1024 },
-  items: 3,
-  slidesToSlide: 3 // optional, default to 1.
-},
-tablet: {
-  breakpoint: { max: 1024, min: 464 },
-  items: 2,
-  slidesToSlide: 2 // optional, default to 1.
-},
-mobile: {
-  breakpoint: { max: 464, min: 0 },
-  items: 1,
-  slidesToSlide: 1 // optional, default to 1.
-}
-};
+export function CarouselSize() {
   return (
-        <Carousel
-        swipeable={false}
-        draggable={false}
-        showDots={true}
-        responsive={responsive}
-        ssr={true} // means to render carousel on server-side.
-        infinite={true}
-        autoPlaySpeed={1000}
-        keyBoardControl={true}
-        customTransition="all .5"
-        transitionDuration={500}
-        containerClass="carousel-container"
-        removeArrowOnDeviceType={["tablet", "mobile"]}
-        dotListClass="custom-dot-list-style"
-        itemClass="carousel-item-padding-40-px"
-        >
-        <div>Item 1</div>
-        <div>Item 2</div>
-        <div>Item 3</div>
-        <div>Item 4</div>
-        </Carousel>
+    <Carousel className={`m-20 ${carousel.removeBorder}`}>
+      <CarouselContent>
+        <CarouselItem key="1" className="md:basis-1/2 lg:basis-1/3">
+          <div>
+            <Card className={` ${carousel.removeBorder}`}>
+              <CardContent className="flex flex-col">
+                <Image
+                  priority
+                  src={jorden}
+                  height={500}
+                  width={500}
+                  alt="Jorden"
+                />
+                <span className="">
+                  <div>
+                    <div className="text-left">
+                      <div className="font-bold text-3xl">Sports</div>
+                      <div>
+                        From fitness studios to sports academies, Rmax empowers
+                        sports businesses &nbsp;
+                        <span className={carousel.link}>Know more...</span>
+                      </div>
+                    </div>
+                  </div>
+                </span>
+              </CardContent>
+            </Card>
+          </div>
+        </CarouselItem>
+        <CarouselItem key="2" className="md:basis-1/2 lg:basis-1/3">
+          <div>
+            <Card className={` ${carousel.removeBorder}`}>
+              <CardContent className="flex flex-col">
+                <Image
+                  priority
+                  src={health}
+                  height={500}
+                  width={500}
+                  alt="Jorden"
+                />
+                <span className="">
+                  <div>
+                    <div className="text-left">
+                      <div className="font-bold text-3xl">
+                        Healthcare & Wellness
+                      </div>
+                      <div>
+                        Health and wellness service providers—from yoga
+                        instructors and gyms &nbsp;
+                        <span className={carousel.link}>Know more...</span>
+                      </div>
+                    </div>
+                  </div>
+                </span>
+              </CardContent>
+            </Card>
+          </div>
+        </CarouselItem>
+        <CarouselItem key="3" className="md:basis-1/2 lg:basis-1/3">
+          <div>
+            <Card className={` ${carousel.removeBorder}`}>
+              <CardContent className="flex flex-col">
+                <Image
+                  priority
+                  src={kids}
+                  height={500}
+                  width={500}
+                  alt="Jorden"
+                />
+                <span className="">
+                  <div>
+                    <div className="text-left">
+                      <div className="font-bold text-3xl">
+                        Learning Activites
+                      </div>
+                      <div>
+                        Tutors, educators, and learning centers—from music
+                        schools to art studios &nbsp;
+                        <span className={carousel.link}>Know more...</span>
+                      </div>
+                    </div>
+                  </div>
+                </span>
+              </CardContent>
+            </Card>
+          </div>
+        </CarouselItem>
+        <CarouselItem key="4" className="md:basis-1/2 lg:basis-1/3">
+          <div>
+            <Card className={` ${carousel.removeBorder}`}>
+              <CardContent className="flex flex-col">
+                <Image
+                  priority
+                  src={jorden}
+                  height={500}
+                  width={500}
+                  alt="Jorden"
+                />
+                <span className="">
+                  <div>
+                    <div className="text-left">
+                      <div className="font-bold text-3xl">Sports</div>
+                      <div>
+                        From fitness studios to sports academies, Rmax empowers
+                        sports businesses &nbsp;
+                        <span className={carousel.link}>Know more...</span>
+                      </div>
+                    </div>
+                  </div>
+                </span>
+              </CardContent>
+            </Card>
+          </div>
+        </CarouselItem>
+      </CarouselContent>
+      <CarouselPrevious />
+      <CarouselNext />
+    </Carousel>
   );
 }
