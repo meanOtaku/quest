@@ -10,13 +10,13 @@ const roboto = Roboto({
 });
 export default function Header() {
   return (
-    <header className={`flex flex-row justify-between ${headerCss.header}`}>
+    <header className={`shrink sm:flex sm:flex-row justify-between ${headerCss.header}`}>
       <div className={`flex flex-row ${headerCss.logo}`}>
         R <div className={headerCss.red}>Max</div>
       </div>
-      <nav className={`${headerCss.navbar} flex flex-row`}>
+      <nav className={`${headerCss.navbar} sm:flex sm:flex-row`}>
         <div
-          className={`${headerCss.center} ${roboto.className} flex flex-row`}
+          className={`${headerCss.center} ${roboto.className} sm:flex sm:flex-row`}
         >
           <Link href="/">Home</Link>
           <DropdownMenuComp />

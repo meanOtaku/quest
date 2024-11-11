@@ -10,11 +10,11 @@ import headerCss from "../header.module.css";
 
 export default function DropdownMenuComp() {
   return (
-    <DropdownMenu>
-      <DropdownMenuTrigger className={headerCss.navButton}>Features ▿</DropdownMenuTrigger>
-      <DropdownMenuContent className="flex flex-col">
-        <div className="flex flex-row m-4">
-          <div className="m-4">
+    <DropdownMenu modal={false}>
+      <DropdownMenuTrigger className={`${headerCss.navButton}`}>Features ▿</DropdownMenuTrigger>
+      <DropdownMenuContent className="shrink flex flex-col">
+        <div className="sm:flex sm:flex-row m-4">
+          <div className="m-4" style={{borderRight: '1px rgba(128, 128, 128, 0.338) solid'}}>
             <DropdownMenuLabel className="text-lg">Discover</DropdownMenuLabel>
             <DropdownMenuSeparator />
             <div className="space-y-3 font-thin">
@@ -24,17 +24,10 @@ export default function DropdownMenuComp() {
 
             </div>
           </div>
-          <div
-            style={{
-              borderLeft: "1px solid #b8b8b8",
-              height: "350px",
-              margin: "2vw"
-            }}
-          ></div>
-          <div className="m-4">
+          <div className="m-4"  style={{borderRight: '1px rgba(128, 128, 128, 0.338) solid'}}>
             <DropdownMenuLabel className="text-lg">Manage</DropdownMenuLabel>
             <DropdownMenuSeparator />
-            <div className="flex flex-row font-thin">
+            <div className="sm:flex sm:flex-row font-thin">
               <div className="space-y-3">
                 <DropdownMenuItem>Courses</DropdownMenuItem>
                 <DropdownMenuItem>Classess</DropdownMenuItem>
@@ -55,13 +48,6 @@ export default function DropdownMenuComp() {
               </div>
             </div>
           </div>
-          <div
-            style={{
-              borderLeft: "1px solid #b8b8b8",
-              height: "350px",
-              margin: "2vw"
-            }}
-          ></div>
           <div className="m-4">
             <DropdownMenuLabel className="text-lg">Grow</DropdownMenuLabel>
             <DropdownMenuSeparator />
@@ -73,7 +59,7 @@ export default function DropdownMenuComp() {
             </div>
           </div>
         </div>
-        <div style={{alignSelf: 'center'}} className="m-6">
+        <div style={{alignSelf: 'center'}} className="m-6 text-sm">
             <button className={`place-self-center font-light ${headerCss.orangeButton}`}>See all feature ▶︎</button>
         </div>
       </DropdownMenuContent>

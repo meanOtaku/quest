@@ -61,10 +61,10 @@ export default function Contact() {
         </div>
         <button className={`place-self-start ${support.submitButton}`}>Leave us a Message →</button>
       </form>
-      <div className={`flex flex-row text-left justify-between space-x-7 p-20 pl-40 pr-40`} style={{width: '100%', backgroundColor: '#f0f0f0'}}>
+      <div className={`sm:flex sm:flex-row text-left sm:justify-between sm:space-x-7 space-y-7 sm:p-20 sm:pl-40 sm:pr-40`} style={{width: '100%', backgroundColor: '#f0f0f0'}}>
         <div>
           Contact Info
-          <div className="text-6xl">
+          <div className="sm:text-6xl text-xl">
             We are always <br />
             happy to assist you
           </div>

@@ -11,7 +11,7 @@ export default function Footer() {
     return (
       <div className={style.footer}>
         <div className={style.about}>
-          <div className="flex flex-row justify-evenly">
+          <div className="sm:flex sm:flex-row justify-evenly">
             <Content services="Company" dmc={['About us', 'Contact us', 'Careers']}></Content>
             <Content services="Business Size" dmc={['Enterpreneurs', 'SMBs', 'Growth Business', 'Houshold Services', 'Enterprise']}></Content>
             <Content services="Business Type" dmc={['Health & Wellness', 'Sports', 'Learning Activites', 'Household Services', 'Miscellaneous']}></Content>

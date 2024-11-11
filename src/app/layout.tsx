@@ -15,10 +15,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="flex min-h-full flex-col">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
+      <body className="flex flex-shrink sm:min-h-full flex-col">
         <div className="flex flex-col min-h-screen"> 
           <Header />
-          <main className="flex-grow p-7"> 
+          <main className="flex-grow sm:p-7"> 
             {children}
           </main>
           <Footer />

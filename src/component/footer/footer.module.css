@@ -2,6 +2,7 @@
     margin: 0;
     background-color: rgb(31, 31, 31) !important;
     font-family: 'Roboto';
+    overflow: hidden;
 }
 
 .about {

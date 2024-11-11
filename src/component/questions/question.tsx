@@ -17,7 +17,7 @@ export default function Questions() {
   return (
     <div className="flex flex-col items-center text-center space-y-20 mt-20">
       <div>
-        <div className="text-6xl font-medium">Frequently Asked Questions</div>
+        <div className="sm:text-6xl text-3xl font-medium">Frequently Asked Questions</div>
         <br />
         Find answers to common questions about our services and features. <br />
         For more details, contact our support team.
@@ -34,15 +34,15 @@ export default function Questions() {
           </Button>
         </div>
       </div>
-      <div style={{ width: "60%" }}>
-        <Accordion type="single" collapsible>
+      <div className="sm:shrink w-2/3">
+        <Accordion className="shrink" type="single" collapsible>
           <AccordionItem
             value="item-1"
-            className="p-6"
+            className="sm:p-6"
             style={{ textAlign: "left" }}
           >
             <AccordionTrigger>
-              <div className="text-xl">What is RMax?</div>
+              <div className="sm:text-xl">What is RMax?</div>
             </AccordionTrigger>
             <AccordionContent>
               <div style={{ color: "grey" }}>
@@ -53,21 +53,21 @@ export default function Questions() {
           </AccordionItem>
           <AccordionItem
             value="item-2"
-            className="p-6"
+            className="sm:p-6"
             style={{ textAlign: "left" }}
           >
             <AccordionTrigger>
-              <div className="text-xl">How does it work?</div>
+              <div className="sm:text-xl">How does it work?</div>
             </AccordionTrigger>
             <AccordionContent>{defaultContent}</AccordionContent>
           </AccordionItem>
           <AccordionItem
             value="item-3"
-            className="p-6"
+            className="sm:p-6"
             style={{ textAlign: "left" }}
           >
             <AccordionTrigger>
-              <div className="text-xl">How much does it cost?</div>
+              <div className="sm:text-xl">How much does it cost?</div>
             </AccordionTrigger>
             <AccordionContent>{defaultContent}</AccordionContent>
           </AccordionItem>

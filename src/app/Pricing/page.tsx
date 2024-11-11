@@ -7,7 +7,7 @@ export default function Pricing() {
   return (
     <div className="">
       <div className="flex flex-col text-center space-x-4">
-        <div className="text-6xl">
+        <div className="sm:text-6xl text-3xl">
           <h1>
             Flexible Plans, <br />
             Transparent Pricing
@@ -17,12 +17,11 @@ export default function Pricing() {
         <p className={pricing.orange}>
           30-day free trial with money-back guarantee.
         </p>
-        <h2 className="text-3xl mt-5 mb-5">Compare our plans</h2>
+        <h2 className="sm:text-3xl mt-5 mb-5">Compare our plans</h2>
         <div
-          className="flex flex-col self-center text-left"
-          style={{ width: "60%" }}
+          className="flex flex-col sm:self-center text-left sm:w-3/5 w-1/5 text-xs"
         >
-          <table className={pricing.planTable}>
+          <table className={`${pricing.planTable}`}>
             <thead className="text-lg font-normal">
               <tr>
                 <th>Features</th>
